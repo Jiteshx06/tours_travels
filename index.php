@@ -1,9 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahyog Tours - Best Travel Agency in Thane, Mumbai</title>
+    <title>Sahyog Tours - Your Trusted Travel Partner</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,15 +18,21 @@
           <span>Sahyog Tours</span>
         </div>
         <ul class="nav-menu">
-          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="index.php" class="active">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="packages.html">PACKAGES</a></li>
+          <li><a href="packages.php">PACKAGES</a></li>
           <li><a href="corporate.html">CORPORATE</a></li>
           <li><a href="blog.html">BLOG</a></li>
           <li><a href="contact.html">CONTACT US</a></li>
         </ul>
         <div class="phone">
           <span>📞 9988776655</span>
+          <?php if(isset($_SESSION['logged_in'])): ?>
+              <a href="dashboard.php" style="margin-left: 20px; color: #fff; text-decoration: none;">👤 <?php echo htmlspecialchars($_SESSION['username']); ?></a>
+              <a href="logout.php" style="margin-left: 10px; color: #fff; text-decoration: none;">Logout</a>
+          <?php else: ?>
+              <a href="login.php" style="margin-left: 20px; color: #fff; text-decoration: none;">Login</a>
+          <?php endif; ?>
         </div>
       </nav>
     </header>
