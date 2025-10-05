@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Trip - Sahyog Tours</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Sahyog Tours" />
+          <span>Sahyog Tours</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="packages.html">PACKAGES</a></li>
+          <li><a href="corporate.html">CORPORATE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="phone">
+          <span>📞 9988776655</span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="booking-hero">
+      <div class="booking-hero-content">
+        <a href="packages.html" class="back-btn">
+          <span class="back-arrow">←</span> Back to Packages
+        </a>
+        <h1>BOOK YOUR DREAM TRIP</h1>
+        <p>Fill in your details and we'll get back to you shortly</p>
+      </div>
+    </section>
+
+    <section class="booking-container">
+      <div class="booking-wrapper">
+        <div class="package-summary">
+          <h2>Package Details</h2>
+          <div class="package-info">
+            <img
+              id="packageImage"
+              src="assets/pexels-tobiasbjorkli-2104152.jpg"
+              alt="Package"
+            />
+            <h3 id="packageName">Selected Package</h3>
+            <p class="package-price" id="packagePrice">₹XX,XXX</p>
+            <div class="package-highlights">
+              <h4>Package Highlights:</h4>
+              <ul>
+                <li>✈️ Round-trip flights included</li>
+                <li>🏨 Accommodation in premium hotels</li>
+                <li>🍽️ Daily breakfast & select meals</li>
+                <li>🚗 Airport transfers & sightseeing</li>
+                <li>📸 Guided tours with expert guides</li>
+                <li>🎫 Entry tickets to major attractions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-section">
+          <h2>Traveler Information</h2>
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName"
+                  >Full Name <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email"
+                  >Email Address <span class="required">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone"
+                  >Phone Number <span class="required">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 9876543210"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="travelers"
+                  >Number of Travelers <span class="required">*</span></label
+                >
+                <select id="travelers" name="travelers" required>
+                  <option value="">Select</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6+">6+ People</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="travelDate"
+                  >Preferred Travel Date <span class="required">*</span></label
+                >
+                <input type="date" id="travelDate" name="travelDate" required />
+              </div>
+              <div class="form-group">
+                <label for="duration"
+                  >Duration <span class="required">*</span></label
+                >
+                <select id="duration" name="duration" required>
+                  <option value="">Select Duration</option>
+                  <option value="3-5">3-5 Days</option>
+                  <option value="5-7">5-7 Days</option>
+                  <option value="7-10">7-10 Days</option>
+                  <option value="10+">10+ Days</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="123 Main Street, City"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="specialRequests">Special Requests / Notes</label>
+              <textarea
+                id="specialRequests"
+                name="specialRequests"
+                rows="4"
+                placeholder="Any special requirements, dietary restrictions, or preferences..."
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="terms" required />
+                I agree to the <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>
+              </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label>
+                <input type="checkbox" name="newsletter" />
+                Subscribe to newsletter for exclusive deals and offers
+              </label>
+            </div>
+
+            <div class="price-summary">
+              <div class="price-row">
+                <span>Base Price:</span>
+                <span id="basePrice">₹XX,XXX</span>
+              </div>
+              <div class="price-row">
+                <span>Taxes & Fees:</span>
+                <span id="taxes">₹X,XXX</span>
+              </div>
+              <div class="price-row total">
+                <span>Total Amount:</span>
+                <span id="totalPrice">₹XX,XXX</span>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Confirm Booking</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">✓</div>
+        <h2>Booking Request Submitted!</h2>
+        <p>Thank you for choosing Sahyog Tours!</p>
+        <p>
+          Your booking reference number is:
+          <strong id="bookingRef">ST-XXXX-XXXX</strong>
+        </p>
+        <p>
+          Our travel expert will contact you within 24 hours to confirm your
+          booking.
+        </p>
+        <button class="modal-btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <!-- Floating buttons -->
+    <a href="tel:+919988776655" class="call-button" title="Call Us"> 📞 </a>
+    <a
+      href="https://wa.me/919988776655"
+      class="whatsapp-button"
+      title="WhatsApp"
+      target="_blank"
+    >
+      💬
+    </a>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+  </body>
+</html>

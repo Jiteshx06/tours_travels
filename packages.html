@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Packages - Sahyog Tours</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Sahyog Tours" />
+          <span>Sahyog Tours</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="packages.html" class="active">PACKAGES</a></li>
+          <li><a href="corporate.html">CORPORATE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="phone">
+          <span>📞 9988776655</span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="packages-hero">
+      <div class="packages-hero-content">
+        <h1>TRAVEL PACKAGES</h1>
+        <p>
+          Discover amazing destinations with our carefully crafted travel
+          packages
+        </p>
+      </div>
+    </section>
+
+    <section class="package-filters">
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">
+          All Packages
+        </button>
+        <button class="filter-btn" data-filter="international">
+          International
+        </button>
+        <button class="filter-btn" data-filter="domestic">Domestic</button>
+        <button class="filter-btn" data-filter="honeymoon">Honeymoon</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+      </div>
+    </section>
+
+    <section class="packages-grid-section">
+      <div class="packages-container">
+        <!-- International Packages -->
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/Europe.jpg" alt="Europe" />
+              <div class="package-overlay">
+                <span class="package-price">₹89,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>GLIMPSES OF EUROPE</h3>
+              <p class="package-location">🌍 Europe</p>
+              <p>
+                Experience the best of Europe with visits to iconic cities and
+                landmarks.
+              </p>
+              <div class="package-features">
+                <span>🕐 8 Nights / 9 Days</span>
+                <span>👥 Max. Group Size: 40</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/londan.jpg" alt="London" />
+              <div class="package-overlay">
+                <span class="package-price">₹1,25,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>LONDON EXPLORER</h3>
+              <p class="package-location">🇬🇧 United Kingdom</p>
+              <p>
+                Explore Big Ben, Buckingham Palace, and Thames River in
+                England's historic capital.
+              </p>
+              <div class="package-features">
+                <span>🕐 15 Nights / 16 Days</span>
+                <span>👥 Max. Group Size: 45</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 5-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international honeymoon">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/bali.jpg" alt="Bali" />
+              <div class="package-overlay">
+                <span class="package-price">₹65,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>BALI PARADISE</h3>
+              <p class="package-location">🇮🇩 Indonesia</p>
+              <p>
+                Best of Bali experience with beautiful beaches and cultural
+                sites.
+              </p>
+              <div class="package-features">
+                <span>🕐 5 Nights / 6 Days</span>
+                <span>👥 Perfect for Couples</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 Beach Resort</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domestic Packages -->
+        <div class="package-item" data-category="domestic family">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/kashmir.jpg" alt="Kashmir" />
+              <div class="package-overlay">
+                <span class="package-price">₹35,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>KASHMIR VALLEY</h3>
+              <p class="package-location">🇮🇳 Jammu & Kashmir</p>
+              <p>
+                Experience the paradise on earth with stunning valleys and
+                lakes.
+              </p>
+              <div class="package-features">
+                <span>🕐 6 Nights / 7 Days</span>
+                <span>👥 Family Friendly</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 3-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="domestic">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/goa pakege.jpg" alt="Goa" />
+              <div class="package-overlay">
+                <span class="package-price">₹25,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>GOA BEACHES</h3>
+              <p class="package-location">🇮🇳 Goa</p>
+              <p>
+                Relax on pristine beaches and enjoy vibrant nightlife in Goa.
+              </p>
+              <div class="package-features">
+                <span>🕐 4 Nights / 5 Days</span>
+                <span>👥 Max. Group Size: 30</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 Beach Resort</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="domestic family">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/rajestan pakege.jpg" alt="Rajasthan" />
+              <div class="package-overlay">
+                <span class="package-price">₹42,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>RAJASTHAN ROYAL</h3>
+              <p class="package-location">🇮🇳 Rajasthan</p>
+              <p>
+                Explore royal palaces, forts, and desert landscapes of
+                Rajasthan.
+              </p>
+              <div class="package-features">
+                <span>🕐 7 Nights / 8 Days</span>
+                <span>👥 Family Friendly</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 Heritage Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Honeymoon Packages -->
+        <div class="package-item" data-category="honeymoon international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/background3.jpg" alt="Maldives" />
+              <div class="package-overlay">
+                <span class="package-price">₹1,85,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>MALDIVES ROMANCE</h3>
+              <p class="package-location">🇲🇻 Maldives</p>
+              <p>
+                Ultimate romantic getaway with overwater villas and pristine
+                beaches.
+              </p>
+              <div class="package-features">
+                <span>🕐 5 Nights / 6 Days</span>
+                <span>💑 Couples Only</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 Luxury Resort</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="honeymoon domestic">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/kerala pakega.jpg" alt="Kerala" />
+              <div class="package-overlay">
+                <span class="package-price">₹38,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>KERALA BACKWATERS</h3>
+              <p class="package-location">🇮🇳 Kerala</p>
+              <p>Romantic houseboat experience in God's own country.</p>
+              <div class="package-features">
+                <span>🕐 5 Nights / 6 Days</span>
+                <span>💑 Perfect for Couples</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 Houseboat Stay</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Packages -->
+        <div class="package-item" data-category="family international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/lastbackground.jpg" alt="Dubai" />
+              <div class="package-overlay">
+                <span class="package-price">₹75,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>DUBAI FAMILY FUN</h3>
+              <p class="package-location">🇦🇪 UAE</p>
+              <p>
+                Family adventure with theme parks, shopping, and desert safari.
+              </p>
+              <div class="package-features">
+                <span>🕐 6 Nights / 7 Days</span>
+                <span>👨‍👩‍👧‍👦 Family Package</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional New Packages -->
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-tobiasbjorkli-2104152.jpg"
+                alt="Switzerland"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹1,45,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>SWISS ALPS ADVENTURE</h3>
+              <p class="package-location">🇨🇭 Switzerland</p>
+              <p>
+                Explore stunning alpine landscapes, charming villages, and
+                scenic train rides.
+              </p>
+              <div class="package-features">
+                <span>🕐 10 Nights / 11 Days</span>
+                <span>👥 Max. Group Size: 35</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 Mountain Resorts</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international family">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-trieu-kim-tran-489969244-32228483.jpg"
+                alt="Thailand"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹55,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>THAILAND EXPLORER</h3>
+              <p class="package-location">🇹🇭 Thailand</p>
+              <p>
+                Discover Bangkok's temples, Phuket's beaches, and vibrant street
+                markets.
+              </p>
+              <div class="package-features">
+                <span>🕐 7 Nights / 8 Days</span>
+                <span>👥 Max. Group Size: 40</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="domestic family">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-vadutskevich-13291211.jpg"
+                alt="Himachal"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹32,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>HIMACHAL HILLS</h3>
+              <p class="package-location">🇮🇳 Himachal Pradesh</p>
+              <p>Experience Shimla, Manali, and breathtaking mountain views.</p>
+              <div class="package-features">
+                <span>🕐 6 Nights / 7 Days</span>
+                <span>👥 Family Friendly</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 Hill Station Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="domestic">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-gunas4life-10874646.jpg"
+                alt="Uttarakhand"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹28,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>UTTARAKHAND SPIRITUAL</h3>
+              <p class="package-location">🇮🇳 Uttarakhand</p>
+              <p>
+                Visit Rishikesh, Haridwar, and experience yoga and spirituality.
+              </p>
+              <div class="package-features">
+                <span>🕐 5 Nights / 6 Days</span>
+                <span>👥 Max. Group Size: 25</span>
+                <span>🚗 Transport Included</span>
+                <span>🏨 Ashram & Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="honeymoon international">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-stas-tsibro-268729-811029.jpg"
+                alt="Mauritius"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹95,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>MAURITIUS HONEYMOON</h3>
+              <p class="package-location">🇲🇺 Mauritius</p>
+              <p>
+                Romantic island escape with crystal clear waters and luxury
+                resorts.
+              </p>
+              <div class="package-features">
+                <span>🕐 6 Nights / 7 Days</span>
+                <span>💑 Couples Special</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 5-Star Beach Resort</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/pexels-igorejov-29794772.jpg" alt="Singapore" />
+              <div class="package-overlay">
+                <span class="package-price">₹68,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>SINGAPORE DELIGHT</h3>
+              <p class="package-location">🇸🇬 Singapore</p>
+              <p>
+                Modern city experience with Gardens by the Bay and Universal
+                Studios.
+              </p>
+              <div class="package-features">
+                <span>🕐 5 Nights / 6 Days</span>
+                <span>👥 Max. Group Size: 30</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/pexels-airamdphoto-34141709.jpg" alt="Greece" />
+              <div class="package-overlay">
+                <span class="package-price">₹1,15,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>GREECE ISLANDS</h3>
+              <p class="package-location">🇬🇷 Greece</p>
+              <p>
+                Explore Santorini, Mykonos, and ancient Athens with stunning
+                views.
+              </p>
+              <div class="package-features">
+                <span>🕐 9 Nights / 10 Days</span>
+                <span>👥 Max. Group Size: 35</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 5-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international family">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/pexels-gije-16205103.jpg" alt="Australia" />
+              <div class="package-overlay">
+                <span class="package-price">₹1,65,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>AUSTRALIA ADVENTURE</h3>
+              <p class="package-location">🇦🇺 Australia</p>
+              <p>
+                Sydney Opera House, Great Barrier Reef, and wildlife encounters.
+              </p>
+              <div class="package-features">
+                <span>🕐 12 Nights / 13 Days</span>
+                <span>👥 Max. Group Size: 30</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="honeymoon international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/pexels-helen1-20411442.jpg" alt="Paris" />
+              <div class="package-overlay">
+                <span class="package-price">₹1,35,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>PARIS ROMANCE</h3>
+              <p class="package-location">🇫🇷 France</p>
+              <p>
+                City of love with Eiffel Tower, Louvre Museum, and romantic
+                Seine cruise.
+              </p>
+              <div class="package-features">
+                <span>🕐 7 Nights / 8 Days</span>
+                <span>💑 Perfect for Couples</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 Luxury Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-ivan-drazic-20457695-15280655.jpg"
+                alt="Turkey"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹78,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>TURKEY HERITAGE</h3>
+              <p class="package-location">🇹🇷 Turkey</p>
+              <p>
+                Istanbul's history, Cappadocia's balloons, and Mediterranean
+                coast.
+              </p>
+              <div class="package-features">
+                <span>🕐 8 Nights / 9 Days</span>
+                <span>👥 Max. Group Size: 40</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="domestic family">
+          <div class="package-card">
+            <div class="package-image">
+              <img
+                src="assets/pexels-jay-moon-2149536798-34114526.jpg"
+                alt="Andaman"
+              />
+              <div class="package-overlay">
+                <span class="package-price">₹48,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>ANDAMAN ISLANDS</h3>
+              <p class="package-location">🇮🇳 Andaman & Nicobar</p>
+              <p>
+                Crystal clear waters, white sand beaches, and water sports
+                paradise.
+              </p>
+              <div class="package-features">
+                <span>🕐 6 Nights / 7 Days</span>
+                <span>👥 Family Friendly</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 Beach Resorts</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-item" data-category="international">
+          <div class="package-card">
+            <div class="package-image">
+              <img src="assets/pexels-tkirkgoz-16777364.jpg" alt="Egypt" />
+              <div class="package-overlay">
+                <span class="package-price">₹92,999</span>
+              </div>
+            </div>
+            <div class="package-content">
+              <h3>EGYPT PYRAMIDS</h3>
+              <p class="package-location">🇪🇬 Egypt</p>
+              <p>
+                Ancient pyramids, Sphinx, Nile cruise, and Cairo's treasures.
+              </p>
+              <div class="package-features">
+                <span>🕐 8 Nights / 9 Days</span>
+                <span>👥 Max. Group Size: 35</span>
+                <span>✈️ Flights Included</span>
+                <span>🏨 4-Star Hotels</span>
+              </div>
+              <button class="book-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating buttons -->
+    <a href="tel:+919988776655" class="call-button" title="Call Us"> 📞 </a>
+    <a
+      href="https://wa.me/919988776655"
+      class="whatsapp-button"
+      title="WhatsApp"
+      target="_blank"
+    >
+      💬
+    </a>
+
+    <script src="script.js"></script>
+    <script src="packages.js"></script>
+  </body>
+</html>
